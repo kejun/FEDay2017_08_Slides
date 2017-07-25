@@ -1,0 +1,13 @@
+{
+  "name": "2017_8_fed_talking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "kejun",
+  "license": "ISC",
+  "devDependencies": {
+    "talkiejs": "^0.12.1",
+    "autoprefixer": "^6.4.1",
+    "node-sass": "^3.10.0"
+  }
+}

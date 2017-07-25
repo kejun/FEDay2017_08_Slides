@@ -1,0 +1,70 @@
+@import '../node_modules/talkiejs/dist/talkie.min';
+@import '../node_modules/talkiejs/dist/talkie-default.min';
+
+#control {
+  color: #ccc;
+}
+#next {
+  border-left-color: #ccc;
+}
+#prev {
+  border-right-color: #ccc;
+}
+
+#pointer {
+  background-color: #8bc34a;
+}
+
+[data-body-bg] {
+  background: #fff;
+}
+
+[layout],
+[layout=bullets] h1,
+[layout=bullets] h2,
+[layout=bullets] h3,
+[layout=title] h1,
+[layout=title] h2,
+[layout=title] h3,
+[layout=cover] h1,
+body {
+  font-family: 'Helvetica Neue',Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+}
+
+[layout=cover] h1 {
+  margin: 0;
+  padding: 0 .5em 1.5em;
+  letter-spacing: 0;
+  background: url(../pics/c.png) no-repeat center bottom;
+  background-size: 100%;
+}
+
+[layout=bullets] h2 {
+  color: #4caf50;
+  font-size: 3em;
+}
+
+[layout=bullets] ol ol,
+[layout=bullets] ol ul,
+[layout=bullets] ul ol,
+[layout=bullets] ul ul {
+  margin-bottom: 0;
+}
+
+[layout=bullets] ol ol p,
+[layout=bullets] ol ul p,
+[layout=bullets] ul ol p,
+[layout=bullets] ul ul p {
+  font-size: inherit;
+}
+
+[layout=bullets] ol ol li,
+[layout=bullets] ol ul li,
+[layout=bullets] ul ol li,
+[layout=bullets] ul ul li {
+  margin-left: 0;
+  font-size: .9em;
+  list-style-type: decimal;
+}
+
+@import './slide-style';

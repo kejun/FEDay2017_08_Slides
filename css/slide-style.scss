@@ -1,0 +1,41 @@
+
+.author {
+  transform: translate(-150%, 0);
+}
+
+.slide-shang {
+  h2 {
+    color: #fff;
+    font-size: 6em;
+    letter-spacing: .2em;
+    text-shadow: 1px 1px 4px rgba(0,0,0,.6);
+  }
+}
+
+.slide-end {
+  h2 {
+    font-size: 6em;
+    letter-spacing: .2em;
+  }
+}
+
+.slide-dimension {
+  ul {
+    min-width: 80%;
+    margin: 0;
+  }
+  li {
+    margin: 0 0 .5em 0;
+    list-style: none;
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+  }
+}
+
+[data-body-bg=title-movie] {
+  background: #000;
+  #backface {
+    background-size: auto 100%;
+  }
+}

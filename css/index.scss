@@ -1,6 +1,12 @@
 @import '../node_modules/talkiejs/dist/talkie.min';
 @import '../node_modules/talkiejs/dist/talkie-default.min';
 
+@import url('//fonts.googleapis.com/earlyaccess/notosansscsliced.css');
+
+b, blockquote, body, body div, caption, cite, code, dd, del, details, dfn, dl, dt, em, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, ol, p, pre, q, samp, section, span, summary, tbody, tfoot, thead, time, tr, ul, var, video {
+  font-weight: lighter;
+}
+
 #control {
   color: #ccc;
 }
@@ -28,15 +34,43 @@
 [layout=title] h3,
 [layout=cover] h1,
 body {
-  font-family: 'Helvetica Neue',Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+  font-family: 'Noto Sans SC Sliced', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
 }
 
 [layout=cover] h1 {
+  position: relative;
   margin: 0;
-  padding: 0 .5em 1.5em;
+  padding: 0 1em .6em;
   letter-spacing: 0;
-  background: url(../pics/c.png) no-repeat center bottom;
-  background-size: 100%;
+  border: 4px solid #8bc34a;
+  border-top: none;
+  border-radius: .25em;
+  border-left-color: #ff7aa7;
+  border-bottom-color: #72cff9;
+  &:before {
+  	content: ' ';
+  	position: absolute;
+  	width: 0;
+  	height: 0;
+  	left: 180px;
+    right: auto;
+    top: auto;
+  	bottom: -62px;
+  	border: 30px solid;
+  	border-color: #72cff9 transparent transparent #72cff9;
+  }
+  &:after{
+  	content: ' ';
+  	position: absolute;
+  	width: 0;
+  	height: 0;
+  	left: 184px;
+    right: auto;
+    top: auto;
+  	bottom: -52px;
+  	border: 28px solid;
+  	border-color: #fff transparent transparent #fff;
+  }
 }
 
 [layout=bullets] h2 {

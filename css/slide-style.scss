@@ -1,12 +1,25 @@
+[data-body-bg] {
+  background: #fff url(../pics/l.png) no-repeat right 5% bottom 5%;
+  background-size: 120px auto;
+}
 
 .author {
-  transform: translate(-150%, 0);
+  margin-top: 5em;
+  transform: translate(-80%, 0);
+  font-size: 1.25em;
+  img {
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: .5em;
+  }
 }
 
 .slide-shang {
   h2 {
     color: #fff;
-    font-size: 6em;
+    font-size: 10em;
     letter-spacing: .2em;
     text-shadow: 1px 1px 4px rgba(0,0,0,.6);
   }
@@ -15,6 +28,7 @@
 .slide-end {
   h2 {
     font-size: 6em;
+    color: #4caf50;
     letter-spacing: .2em;
   }
 }
